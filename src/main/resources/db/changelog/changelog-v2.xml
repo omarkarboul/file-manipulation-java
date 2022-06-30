@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:pro="http://www.liquibase.org/xml/ns/pro"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.1.xsd
+        http://www.liquibase.org/xml/ns/pro
+        http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.1.xsd">
+
+    <!--
+        Added column personId the entity Cars.
+    -->
+    <changeSet author="1" id="omar">
+        <addColumn schemaName="liquibase"
+                   tableName="cars">
+            <column name="person_id"
+                    type="INTEGER"/>
+        </addColumn>
+    </changeSet>
+
+</databaseChangeLog>
